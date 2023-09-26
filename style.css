@@ -40,12 +40,17 @@
   }
   
   .weather-html-css button {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px auto;
+    padding: 16px 24px;
+    background: #1a64d6;
+    border: 1px solid #1a64d6;
+    border-radius: 30px;
+    box-shadow: rgba(37,39,89, 0.08) 0px 8px 0;
+    transition: all 200ms ease;
     cursor: pointer;
   }
   
@@ -58,4 +63,5 @@
     text-align: right;
     margin: 0;
     color: #e099b7;
+    font-style: italic;
   }
