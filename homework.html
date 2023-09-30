@@ -128,12 +128,28 @@
           </li>
         </ul>
     
-        <button>
-          Change city
-        </button>
+        <button id="changeCityButton">Change city</button>
+ 
         <p>
           Coded by Siphokazi
         </p>
     </div>
+<script>
+  function getWeather() {
+    let newCity = prompt('Enter a new city name:');
+      let newTemperature = (prompt('Enter the temperature in °C:'));
+      if (newTemperature) {
+        document.querySelector('.weather-html-css h1').textContent = `🌤\nCurrently ${newTemperature}° in ${newCity}`;
+        let emoji;
+          if (newTemperature >= 0) {
+             emoji = '😃'; 
+              } else {
+                emoji = '😢';
+            }
+              document.querySelector('.weather-html-css h1').innerHTML += `<br>${emoji}`;
+             }
+            }
+  getWeather();
+</script>
 </body>
 </html>
